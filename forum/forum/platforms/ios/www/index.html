@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Blog</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+<script src="cordova.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/map.js"></script>
+<script src="js/jquery.mobile.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/encrypt.js"></script>
+
+</head>
+
+<body>
+
+
+<!---->
+
+
+
+
+
+
+
+  <div id="homeScreen" data-role="page">
+
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+
+
+    <div data-role="main" class="ui-content">
+
+  <a href="#login" class="ui-btn">Login</a>
+  <a href="#register" class="ui-btn">Register</a>
+
+</div>
+
+
+
+      </ul>
+
+    </div>
+  </div>
+
+
+<div id="bloglist" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <h1>BlogList</h1>
+    <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+
+  </header>
+  <div data-role="content">
+    <h1 class="center"></h1>
+
+
+
+
+
+
+<!--<input data-nativekeyboard="true" type="text" value="max 15 chars" maxlength="15" style="font-size:13px; font-family:Helvetica; font-style:italic" /><br/>
+
+-->
+
+
+
+    <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+
+      <li><a href="#socialmedia"><img src="imgs/social_media.png"><h2>Social media</h2>
+        <p> </p></a></li>
+
+      <li><a href="#digitalart"><img src="imgs/digital_art.png"><h2>Digital Art</h2>
+          <p> </p></a></li>
+
+      <li><a href="#science"><img src="imgs/science.png"><h2>Science</h2>
+          <p></p></a></li>
+
+      <li><a href="#history"><img src="imgs/history.png"><h2>History</h2>
+          <p></p></a></li>
+    </ul>
+  </div>
+
+</div>
+
+
+<div id="login" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <h1>Register</h1>
+    <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+  </header>
+
+  <form>
+   First name:<br>
+   <input type="text" name="firstname"><br>
+   Password:<br>
+   <input type="text" name="password"><br>
+
+     <a href="#bloglist" class="ui-btn">Login</a>
+
+</form>
+
+
+</div>
+
+
+<div id="register" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <h1>Register</h1>
+    <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+  </header>
+
+  <form>
+   First name:<br>
+   <input type="text" name="firstname"><br>
+   Last name:<br>
+   <input type="text" name="lastname"><br>
+    Ocupation:<br>
+     <input type="text" name="ocupation"><br>
+     Password:<br>
+     <input type="text" name="password"><br>
+
+     <a href="#bloglist" class="ui-btn">Register</a>
+
+</form>
+
+
+</div>
+
+
+
+
+<div id="socialmedia" data-role="page">
+
+  <div data-role="content">
+
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Social Media</h1>
+      <a href="#bloglist" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+
+
+    <div data-role="content">
+      <h1 class="center"></h1>
+      <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+
+        <li><a href="#elise">    <img src="imgs\profile1.png" alt="profile_one" width="128" height="128"  top="80"><h2>@Elise</h2>
+          </a></li>
+          <br></h4><h5> Social Media Posting Guidelines</h5>
+                  <br><h6 left="20px">The Social Media sub-forum is about discussion for SOCIAL MEDIA only.<br><br>
+
+            1. This is no place for the following (but not limited to): asking/buying for likes, selling accounts, promoting social media scraping tools, and discussing methods that breach privacy.<br>
+
+            2. Search Engine Optimization topics (those belong here.) They would be moved there without prior notice (unless anyone asks). Social Media topics posted on the other sub-forums will be moved here to get better answers/results.<br>
+
+            3. Do not attempt to start which Social Media platform is better just to inflate your post count. We have them enough already. Any attempt to post "Which-is-better" or (Social media) vs. (Social Media) will be promptly deleted. If you want to read about them, here are some of the link resources:
+            </h6>
+
+
+        <li><a href="#gloria"><img src="imgs\profile2.png" alt="profile_one" width="128" height="128" ><h2>@Gloria</h2>
+          </a></li>
+  <br><h6 left="20px">thanks for the information</h6>
+
+
+
+      </ul>
+    </div>
+
+    <ul data-role="listview" data-inset="true" class="ui-nodisc-icon ui-alt-icon">
+
+      <div data-role="main" class="ui-content">
+
+    <a href="#createpost" class="ui-btn">CREATE POST</a>
+    <a href="#replaypost" class="ui-btn">REPLAY POST</a>
+
+    </div>
+
+    </ul>
+
+    </div>
+  </div>
+</div>
+
+<div id="gloria" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#socialmedia" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Gloria</h2>
+
+    <p>Name: Gloria <br>
+    Surname: Perez<br>
+  Ocupation: Lawyer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editgloria" class="ui-btn">Edit Gloria</a>
+
+    </div>
+
+
+  </header>
+</div>
+
+<div id="editgloria" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#gloria" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Gloria</h2>
+
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><br>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#gloria" class="ui-btn">Edit</a>
+
+  </form>
+
+  </header>
+</div>
+
+<div id="elise" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#socialmedia" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Elise</h2>
+
+    <p>Name: Elise <br>
+    Surname: Suarez<br>
+  Ocupation: Programmer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editelise" class="ui-btn">Edit Elise</a>
+
+    </div>
+
+
+  </header>
+</div>
+
+<div id="editelise" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#elise" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Elise</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><BR>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#elise" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+
+
+
+
+<div id="createpost" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#socialmedia" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Create Post</h2>
+
+    <form>
+    Create Post:<br>
+     <input type="text" name="create"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#socialmedia" class="ui-btn">Add</a>
+     </div>
+
+
+   </form>
+
+  </header>
+</div>
+
+<div id="replaypost" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#socialmedia" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Replay Post</h2>
+    <form>
+     Replay Post:<br>
+     <input type="text" name="replay"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#socialmedia" class="ui-btn">Replay</a>
+     </div>
+
+  </form>
+  </header>
+</div>
+
+
+
+<div id="digitalart" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#bloglist" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Digital Art</h2>
+
+
+    <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+
+      <li><a href="#steven">    <img src="imgs\profile3.png" alt="profile_one" width="128" height="128"><h2>@Steven</h2>
+        </a></li>
+        <br><h5> Social Media Posting Guidelines</h5>
+        <br><h6 left="20px"> Photoshop tips for "oil" painting?<br><br>
+  I've been painting in real oils my whole life. Recently I decided to try going digital for a number of reasons. <br>
+  I have Photoshop CS5 and have been playing around with the mixer brushes and bristle brushes, trying to achieve <br>
+  something resembling traditional oil painting but am not having much luck. Real oil paints, when dragged over a <br>
+  painting surface, leave little bits of rough edges and holes, even on a fairly smooth surface. Photoshop brushes <br>
+  seem to blend everything to be too smooth, or leave straight edges of the brush stroke that are obviously digital.<br>
+  I can't seem to find a way to get a little "roughness" or texture in the strokes. I'm relatively new to this so perhaps<br>
+  I'm not using the right brushes, or the right blending modes or something. Anyone have some tips for getting digital brush <br>
+  strokes to look more like real brush strokes?
+  </h6>
+
+
+      <li><a href="#eric"><img src="imgs\profile4.png" alt="profile_one" width="128" height="128"><h2>@Eric</h2>
+        </a></li>
+        <br><h6 left="20px">ArtRage or Corel Painter are definitely better alternatives. A free trial is available for ArtRage <br>
+        so you can try it and figure out if it will do what you want, it's not expensive to purchase either, just <br>
+        under $50. The key to getting the look you want in ArtRage is adjusting the settings for the oil brush tool,<br>
+         in particular the loading, pressure and amount of "thinner".
+        </h6>
+    </ul>
+
+    <div data-role="main" class="ui-content">
+
+    <a href="#createpost2" class="ui-btn">CREATE POST</a>
+    <a href="#replaypost2" class="ui-btn">REPLAY POST</a>
+
+    </div>
+  </header>
+</div>
+
+
+<div id="steven" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#digitalart" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Steven</h2>
+    <p>Edit User</p>
+
+    <p>Name: Steven <br>
+    Surname: Bond<br>
+  Ocupation: Developer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editsteven" class="ui-btn">Edit Steven</a>
+
+    </div>
+
+  </header>
+</div>
+
+<div id="editsteven" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#steven" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Steven</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><BR>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#steven" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+<div id="eric" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#digitalart" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Eric</h2>
+
+    <p>Name: Eric <br>
+    Surname: Store<br>
+  Ocupation: Finance</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editeric" class="ui-btn">Edit Eric</a>
+
+    </div>
+
+  </header>
+</div>
+
+<div id="editeric" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#eric" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Eric</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><BR>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#eric" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+
+<div id="createpost2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#digitalart" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Create Post</h2>
+
+    <form>
+    Create Post:<br>
+     <input type="text" name="create"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#digitalart" class="ui-btn">Add</a>
+     </div>
+
+   </form>
+
+  </header>
+</div>
+
+<div id="replaypost2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#digitalart" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Replay Post</h2>
+
+    <form>
+     Replay Post:<br>
+     <input type="text" name="replay"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#digitalart" class="ui-btn">Replay</a>
+     </div>
+   </form>
+
+
+  </header>
+</div>
+
+
+
+
+<div id="science" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#bloglist" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Science</h2>
+
+
+    <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+
+      <li><a href="#steven2">    <img src="imgs\profile3.png" alt="profile_one" width="128" height="128"><h2>@Steven</h2>
+        </a></li>
+        <br><h5> Social Media Posting Guidelines</h5>
+        <br><h6 left="20px"> I have a steel rod, cages and screws in my back.<br>
+           I was grocery shopping and kept getting these really horrible static<br>
+
+  shocks. At times it popped so loud it sounded like a fire cracker. The cooler doors were the scariest . <br>
+  It felt like this
+
+  energy coming at my hand. I backed away from even trying to open the doors. I've never experienced this before.<br>
+
+  Others were getting the same thing but not nearly as bad as me. What possibly could have caused this and could<br>
+
+  the steel in my back made it worse for me?
+      </h6>
+
+
+      <li><a href="#gloria2">  <img src="imgs\profile2.png" alt="profile_one" width="128" height="128"><h2>@Gloria</h2>
+        </a></li>
+        <br><h6 left="20px">The steel would make it worse, I think, because conductivity of stainless steel, <br>
+          (titanium is slightly less conductive than stainless steel), appears about one million times greater<br>
+           than muscle, allowing the electricity to be conducted to earth more rapidly. Rubber soled shoes may be <br>
+           the solution.
+    </h6>
+    </ul>
+
+    <div data-role="main" class="ui-content">
+
+    <a href="#createpost3" class="ui-btn">CREATE POST</a>
+    <a href="#replaypost3" class="ui-btn">REPLAY POST</a>
+
+    </div>
+  </header>
+</div>
+
+<div id="steven2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#science" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Steven</h2>
+
+    <p>Name: Steven <br>
+    Surname: Bond<br>
+  Ocupation: Developer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editsteven2" class="ui-btn">Edit Steven</a>
+
+    </div>
+
+  </header>
+</div>
+
+<div id="editsteven2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#steven2" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Steven</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><BR>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#steven2" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+<div id="gloria2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#science" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Gloria</h2>
+
+    <p>Name: Gloria <br>
+    Surname: Perez<br>
+  Ocupation: Lawyer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editgloria2" class="ui-btn">Edit Gloria</a>
+
+    </div>
+
+  </header>
+</div>
+
+<div id="editgloria2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#gloria2" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Gloria</h2>
+
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><br>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#gloria2" class="ui-btn">Edit</a>
+
+  </form>
+
+  </header>
+</div>
+
+
+
+<div id="createpost3" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#science" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Create Post</h2>
+
+    <form>
+    Create Post:<br>
+     <input type="text" name="create"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#science" class="ui-btn">Add</a>
+     </div>
+   </form>
+
+  </header>
+</div>
+
+<div id="replaypost3" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#science" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Replay Post</h2>
+
+    <form>
+     Replay Post:<br>
+     <input type="text" name="replay"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#science" class="ui-btn">Replay</a>
+     </div>
+   </form>
+
+  </header>
+</div>
+
+
+
+
+
+<div id="history" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#bloglist" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>History</h2>
+
+    <ul data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+
+      <li><a href="#eric2">      <img src="imgs\profile4.png" alt="profile_one" width="128" height="128"><h2>@Eric</h2>
+        </a></li>
+        <br><h6 left="20px"> History is books, and archives, primary and secondary source material. <br>
+          Making sense of literary reference, contemporary social comment and subsequent attitudes and opinions.<br>
+          'For all of us there is a twilight zone between history and memory; between the past as a generalised <br>
+          record which is open to relatively dispassionate inspection and the past as a remembered part of, or background<br>
+           to, one's own life. For individual human beings this zone stretches from the point where living family traditions <br>
+           or memories begin.'<br>
+
+      </h6>
+
+
+
+      <li><a href="#elise2">  <img src="imgs\profile1.png" alt="profile_one" width="128" height="128"><h2>@Elise</h2>
+        </a></li>
+        <br><h6 left="20px">The steel would make it worse, I think, because conductivity of stainless steel, <br>
+          (titanium is slightly less conductive than stainless steel), appears about one million times greater<br>
+           than muscle, allowing the electricity to be conducted to earth more rapidly. Rubber soled shoes may be <br>
+           the solution.
+            </h6>
+    </ul>
+
+
+    <div data-role="main" class="ui-content">
+
+    <a href="#createpost4" class="ui-btn">CREATE POST</a>
+    <a href="#replaypost4" class="ui-btn">REPLAY POST</a>
+
+    </div>
+  </header>
+</div>
+
+
+<div id="eric2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#history" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Eric</h2>
+
+    <p>Name: Eric <br>
+    Surname: Store<br>
+  Ocupation: Finance</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editeric2" class="ui-btn">Edit Eric</a>
+
+    </div>
+
+
+  </header>
+</div>
+
+<div id="editeric2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#eric2" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Eric</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><br>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#eric2" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+<div id="elise2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#history" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Elise</h2>
+
+    <p>Name: Elise <br>
+    Surname: Suarez<br>
+  Ocupation: Programmer</p>
+
+    <div data-role="main" class="ui-content">
+
+      <a href="#editelise2" class="ui-btn">Edit Elise</a>
+
+    </div>
+
+
+  </header>
+</div>
+
+<div id="editelise2" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#elise2" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Elise</h2>
+    <p>Edit User</p>
+    <form>
+     First name:<br>
+     <input type="text" name="firstname"><br>
+     Last name:<br>
+     <input type="text" name="lastname"><BR>
+      Ocupation:<br>
+       <input type="text" name="ocupation"><br>
+       <a href="#elise2" class="ui-btn">Edit</a>
+
+    </form>
+  </header>
+</div>
+
+
+
+<div id="createpost4" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#history" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Create Post</h2>
+
+    <form>
+    Create Post:<br>
+     <input type="text" name="create"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#history" class="ui-btn">Add</a>
+     </div>
+
+   </form>
+
+  </header>
+</div>
+
+<div id="replaypost4" data-role="page">
+  <header data-role="header" data-position="fixed" data-id="appHeader">
+    <a href="#history" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    <h2>Replay Post</h2>
+
+    <form>
+     Replay Post:<br>
+     <input type="text" name="replay"><br>
+
+     <div data-role="main" class="ui-content">
+       <a href="#history" class="ui-btn">Replay</a>
+     </div>
+   </form>
+
+
+  </header>
+</div>
+
+
+
+
+</body>
+</html>

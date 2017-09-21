@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.forum"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.example.forum"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.example.forum"
+        },
+        "cordova-plugin-actionsheet": {
+            "PACKAGE_NAME": "com.example.forum"
+        }
+    },
+    "dependent_plugins": {}
+}
